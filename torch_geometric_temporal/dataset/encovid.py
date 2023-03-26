@@ -58,7 +58,7 @@ class EnglandCovidDatasetLoader(object):
         Args types:
             * **lags** *(int)* - The number of time lags.
         Return types:
-            * **dataset** *(StaticGraphTemporalSignal)* - The England Covid dataset.
+            * **dataset** *(DynamicGraphTemporalSignal)* - The England Covid dataset.
         """
         self.lags = lags
         self._get_edges()

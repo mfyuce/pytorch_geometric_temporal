@@ -77,7 +77,7 @@ def test_dynamic_graph_temporal_signal_real():
     n_count = 100
     feature_count = 32
 
-    edge_indices, edge_weights, features = generate_signal(250, 100, 32)
+    edge_indices, edge_weights, features = generate_signal(snapshot_count, n_count, feature_count)
 
     targets = [np.random.uniform(0, 10, (n_count,)) for _ in range(snapshot_count)]
 
